@@ -49,3 +49,11 @@
 		width: 50%;
 	}
 }
+
+/* Smaller smartphones */
+@media (max-width: 480px) {
+	.text {
+		/* We dont want to has big width */
+		width: auto;
+	}
+}

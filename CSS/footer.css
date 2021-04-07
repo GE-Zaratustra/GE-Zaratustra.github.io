@@ -14,6 +14,12 @@ footer a {
 	text-decoration: none;
 }
 
+/* Remove unordened list default style */
+footer ul {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
 /* The footer is made of two divs, add padding to these divs */
 footer div {
 	padding: 15px;
@@ -32,7 +38,34 @@ footer div {
 	/* To make collum we gonna use flexbox. To do that, the container must be display flex*/
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
 	justify-content: space-around;
 	align-content: center;
+}
+
+/* Smaller smartphones */
+@media (max-width: 480px) {
+	.footer-contact {
+		flex-direction: column;
+		box-sizing: content-box;
+	}
+	.footer-contact > * {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		padding: 10px;
+	}
+}
+/* Tablets, larger Smartphones, Laptops and desktops comupters */
+@media (min-width: 481px) {
+	.footer-contact {
+		flex-direction: row;
+	}
+	.footer-contact > * {
+		width: auto;
+	}
+
+	.footer-contact img {
+		width: 120px;
+	}
 }
