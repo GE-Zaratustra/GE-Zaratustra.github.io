@@ -1,6 +1,5 @@
 /* This class stylize the parent element */
 .menu-bar {
-	width: 100%;
 	padding: 10px;
 	box-sizing: content-box;
 	/* bakcground opacity transition */

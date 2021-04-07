@@ -1,0 +1,38 @@
+footer {
+	background-color: #1a1a1a;
+	color: white;
+}
+
+/* Copyright zone is darker */
+.footer-copyright {
+	background-color: #000000;
+}
+
+/* Remove link default style */
+footer a {
+	color: palevioletred;
+	text-decoration: none;
+}
+
+/* The footer is made of two divs, add padding to these divs */
+footer div {
+	padding: 15px;
+}
+
+/* In the footer one of the divs is a contact zone. 
+ * There is: logo, social media and sitemap. 
+ * It must be display as 3 collum */
+.footer-contact {
+	/* We will use justify-content: space-around.
+	 * make space around children in the same line equal. 
+	 * But if footer is full width, that space maybe is to big.
+	 * So we must reduce this zone width and center it*/
+	width: 80%;
+	margin: auto;
+	/* To make collum we gonna use flexbox. To do that, the container must be display flex*/
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+}
