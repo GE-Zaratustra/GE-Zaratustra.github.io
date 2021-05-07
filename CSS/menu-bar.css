@@ -27,9 +27,9 @@
 	text-decoration: none;
 }
 
-.menu-bar a:hover,
-.menu-bar a:active {
-	background-color: #e6e6e6;
+.menu-bar-links a:hover,
+.menu-bar-links a:active {
+	background-color: #dfe92c;
 }
 
 /* Smaller smartphones */
