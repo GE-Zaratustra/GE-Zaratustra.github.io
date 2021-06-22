@@ -1,9 +1,11 @@
 <div id="events-gallery">
-    {% for image in site.static_files %}
+    {% assign sorted = site.static_files | sort: 'date' | reverse %}
+
+    {% for image in sorted %}
 
         {% if image.path contains include.folder %}         
             <a class="event" href="{{ image.path }}" target="_blank">
-                <img src="{{ image.path }}" />
+                <img src="{{ image.path }}" alt="{{ image.name }}" />
             </a>
         {% endif %}
     

@@ -1,0 +1,27 @@
+.post {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .post-header {
+        color: white;
+        background-color: #1a1a1a;
+        box-sizing: border-box;
+        padding: 10px;
+        border: 1px solid gainsboro;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .post {
+        padding: 20px;
+        width: calc(100% - 60px);
+    }
+}
