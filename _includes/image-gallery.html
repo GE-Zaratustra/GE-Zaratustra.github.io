@@ -1,0 +1,11 @@
+<div id="events-gallery">
+    {% for image in site.static_files %}
+
+        {% if image.path contains include.folder %}         
+            <a class="event" href="{{ image.path }}" target="_blank">
+                <img src="{{ image.path }}" />
+            </a>
+        {% endif %}
+    
+    {% endfor %}
+</div>

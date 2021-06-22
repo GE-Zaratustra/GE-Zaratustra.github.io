@@ -1,79 +1,25 @@
-<!DOCTYPE html>
-<html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+---
+layout: default
+title: Bienvenida
+---
 
-		<!-- Styles -->
-		<link rel="stylesheet" href="CSS/menu-bar.css" />
-		<link rel="stylesheet" href="CSS/parallax.css" />
-		<link rel="stylesheet" href="CSS/footer.css" />
-		<link rel="stylesheet" href="CSS/colors.css" />
-
-		<!-- Capriola font -->
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet" />
-
-		<link rel="icon" href="https://ge-zaratustra.github.io/Img/logo.png" />
-		<title>Zaratustra</title>
-	</head>
-
-	<body style="min-height: 100vh; font-family: 'Capriola', sans-serif; padding: 0; margin: 0">
-		<nav class="menu-bar">
-			<div>
-				<strong><a href="https://ge-zaratustra.github.io/">G.E. ZARATUSTRA</a></strong>
-				<button id="menu-bar-button" onclick="openCloseMenu();">/\</button>
-			</div>
-			<div class="menu-bar-links" id="menu-bar-links">
-				<a href="https://ge-zaratustra.github.io/">INICIO</a>
-				<a href="https://ge-zaratustra.github.io/events">EVENTOS</a>
-				<a href="https://ge-zaratustra.github.io/review">RESEÑAS</a>
-			</div>
-		</nav>
-		<main style="min-height: 80vh">
-			<div class="parallax hero-banner" style="background-image: url('Img/la-ultima-cena.jpg')">
-				<h1>ZARATUSTRA</h1>
-				<p>Filosofía Arte y Literatura</p>
-			</div>
-			<div class="text">
-				<h2>¿Qué es Zaratustra?</h2>
-				<p>
-					Zaratustra es un grupo adscrito al pregrado de filosofía y humanidades, pero está abierto a estudiantes de todas las carreras. Nuestro objetivo es llevar las humanidades y la
-					filosofía al campus universitario
-				</p>
-			</div>
-			<div class="parallax" style="background-image: url('Img/los-fundadores.JPG')"></div>
-			<div class="text">
-				<h2>¿Qué queremos?</h2>
-				<p>
-					Queremos explotar los intereses y los gustos de los estudiantes, que por diversos motivos no pueden satisfacer en sus carreras. Como el escribir, leer poemas, tener nociones de
-					arte, debatir temas de interés general, etc. Los eventos que realizamos se construyen a partir de las ideas e intereses de nuestros miembros.
-				</p>
-			</div>
-			<div class="parallax" style="background-image: url('Img/modalidad-virtual.jpeg')"></div>
-		</main>
-
-		<footer>
-			<div class="footer-contact">
-				<img src="https://ge-zaratustra.github.io/Img/logo.png" alt="" width="120px" />
-				<ul>
-					Contacto
-					<li><a href="https://www.instagram.com/zaratustra_uninorte" title="Instagram">Instagram</a></li>
-					<li><a href="https://www.facebook.com/ZaratustraUN/" title="Facebook">Facebook</a></li>
-					<li><a mailto="zaratustra@uninorte.edu.co" title="Escribir Correo">Correo</a></li>
-				</ul>
-
-				<ul>
-					Mapa del sitio
-					<li><a href="https://ge-zaratustra.github.io/">Inicio</a></li>
-					<li><a href="https://ge-zaratustra.github.io/events">Eventos</a></li>
-					<li><a href="https://ge-zaratustra.github.io/review">Reseñas</a></li>
-				</ul>
-			</div>
-			<div class="footer-copyright"> Zaratustra 2021 </div>
-		</footer>
-
-		<script src="https://ge-zaratustra.github.io/index.js"></script>
-	</body>
-</html>
+<div class="parallax hero-banner" style="background-image: url('{{ site.baseurl }}/assets/images/la-ultima-cena.jpg')">
+    <h1>ZARATUSTRA</h1>
+    <p>Filosofía Arte y Literatura</p>
+</div>
+<div class="text">
+    <h2>¿Qué es Zaratustra?</h2>
+    <p>
+        Zaratustra es un grupo adscrito al pregrado de filosofía y humanidades, pero está abierto a estudiantes de todas las carreras. Nuestro objetivo es llevar las humanidades y la
+        filosofía al campus universitario
+    </p>
+</div>
+<div class="parallax" style="background-image: url('{{ site.baseurl }}/assets/images/los-fundadores.JPG')"></div>
+<div class="text">
+    <h2>¿Qué queremos?</h2>
+    <p>
+        Queremos explotar los intereses y los gustos de los estudiantes, que por diversos motivos no pueden satisfacer en sus carreras. Como el escribir, leer poemas, tener nociones de
+        arte, debatir temas de interés general, etc. Los eventos que realizamos se construyen a partir de las ideas e intereses de nuestros miembros.
+    </p>
+</div>
+<div class="parallax" style="background-image: url('{{ site.baseurl }}/assets/images/modalidad-virtual.jpeg')"></div>

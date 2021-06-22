@@ -1,0 +1,31 @@
+#events-gallery {
+    width: 80%;
+    margin: auto;
+    /* Para hacer la sepacración entre el header y el footer */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.event {
+    /* Hay que definir los tamaños de las targetas */
+    display: block;
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+
+    img {
+        height: 250px;
+        width: 250px;
+        /* La imagen lo tiene ese tamaño, asi que hay que evitar que se deforme */
+        object-fit: cover;
+    }
+}

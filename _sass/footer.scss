@@ -1,0 +1,76 @@
+/* Copyright zone is darker */
+.footer-copyright {
+    background-color: #000000;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+
+    /* Remove link default style */
+    a {
+        color: palevioletred;
+        text-decoration: none;
+    }
+
+    /* Remove unordened list default style */
+    ul {
+        list-style-type: none;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    /* The footer is made of two divs, add padding to these divs */
+    div {
+        padding: 15px;
+    }
+}
+
+/* In the footer one of the divs is a contact zone. 
+ * There is: logo, social media and sitemap. 
+ * It must be display as 3 collum */
+.footer-contact {
+    /* We will use justify-content: space-around.
+	 * make space around children in the same line equal. 
+	 * But if footer is full width, that space maybe is to big.
+	 * So we must reduce this zone width and center it*/
+    width: 80%;
+    margin: auto;
+    /* To make collum we gonna use flexbox. To do that, the container must be display flex*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+/* Smaller smartphones */
+@media (max-width: 480px) {
+    .footer-contact {
+        flex-direction: column;
+        box-sizing: content-box;
+
+        >* {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            padding: 10px;
+        }
+    }
+
+}
+
+/* Tablets, larger Smartphones, Laptops and desktops comupters */
+@media (min-width: 481px) {
+    .footer-contact {
+        flex-direction: row;
+
+        >* {
+            width: auto;
+        }
+
+        img {
+            width: 120px;
+        }
+    }
+}
